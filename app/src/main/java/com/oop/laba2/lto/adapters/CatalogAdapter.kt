@@ -46,7 +46,7 @@ class CatalogAdapter (val apartments:List<House>):RecyclerView.Adapter<CatalogAd
         val itemView =
             LayoutInflater.from(parent.context)
                 .inflate(R.layout.catalog_item, parent, false)
-        return CatalogAdapter.CatalogViewHolder(itemView)
+        return CatalogViewHolder(itemView)
     }
 
 
@@ -67,12 +67,12 @@ class CatalogAdapter (val apartments:List<House>):RecyclerView.Adapter<CatalogAd
                         it.setTextColor(holder.itemView.context.getColor(R.color.dark1))
                         val layout = it.view
                         val textView = layout.findViewById<TextView>(com.google.android.material.R.id.snackbar_text)
-                        textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_done, 0, 0, 0);
+                        textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_done, 0, 0, 0)
                         textView.compoundDrawablePadding = 14.px
                         textView.textAlignment=View.TEXT_ALIGNMENT_TEXT_START
                     }
                     .show()
-//dfghjkjhg
+//dfghjkjhgihiho
             }else{
 
                 (it as ImageButton).setColorFilter(ContextCompat.getColor(holder.itemView.context,
@@ -84,7 +84,7 @@ class CatalogAdapter (val apartments:List<House>):RecyclerView.Adapter<CatalogAd
                         it.setTextColor(holder.itemView.context.getColor(R.color.dark1))
                         val layout = it.view
                         val textView = layout.findViewById<TextView>(com.google.android.material.R.id.snackbar_text)
-                        textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_done, 0, 0, 0);
+                        textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_done, 0, 0, 0)
                         textView.compoundDrawablePadding = 14.px
                         textView.textAlignment=View.TEXT_ALIGNMENT_TEXT_START
                     }
