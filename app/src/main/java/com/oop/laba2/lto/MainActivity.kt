@@ -14,7 +14,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import androidx.core.graphics.toColorFilter
 
-
+//ghkjljhgc
 class MainActivity : AppCompatActivity() {
     val houseList = listOf<House>(
         House(),
