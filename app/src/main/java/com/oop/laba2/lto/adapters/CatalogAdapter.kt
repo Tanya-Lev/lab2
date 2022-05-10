@@ -72,7 +72,7 @@ class CatalogAdapter (val apartments:List<House>):RecyclerView.Adapter<CatalogAd
                         textView.textAlignment=View.TEXT_ALIGNMENT_TEXT_START
                     }
                     .show()
-
+//dfghjkjhg
             }else{
 
                 (it as ImageButton).setColorFilter(ContextCompat.getColor(holder.itemView.context,
