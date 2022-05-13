@@ -13,28 +13,28 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.core.graphics.toColorFilter
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 //ghkjljhgc
 class MainActivity : AppCompatActivity() {
-    val houseList = listOf<House>(
-        House(),
-        House(),
-        House(),
-        House(),
-        House(),
-        House(),
-    )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val specialOffersRV = findViewById<RecyclerView>(R.id.specialOffersRV)
-        specialOffersRV.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        specialOffersRV.adapter = SpecialOffersAdapter(houseList)
+        val navView: BottomNavigationView = findViewById(R.id.bottom_nav_view)
 
-        val catalogRV = findViewById<RecyclerView>(R.id.catalogRV)
-        catalogRV.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        catalogRV.adapter = CatalogAdapter(houseList)
+        val navController = findNavController(R.id.nav_host_fragment)
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        val appBarConfiguration = AppBarConfiguration(setOf(
+            R.id.navigation_home,
+            R.id.navigation_selections))
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
 
 
 //        val button = findViewById<ImageButton>(R.id.heartBtn)

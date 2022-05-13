@@ -8,19 +8,19 @@ import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
+import android.view.ViewGroup.MarginLayoutParams
+import android.widget.*
 import androidx.appcompat.content.res.AppCompatResources
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
+import androidx.core.view.marginBottom
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import com.oop.laba2.lto.MainActivity
 import com.oop.laba2.lto.R
 import com.oop.laba2.lto.Utils.px
 import com.oop.laba2.lto.enteties.House
+
 
 class CatalogAdapter (val apartments:List<House>):RecyclerView.Adapter<CatalogAdapter.CatalogViewHolder>(){
     class CatalogViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
@@ -70,9 +70,10 @@ class CatalogAdapter (val apartments:List<House>):RecyclerView.Adapter<CatalogAd
                         textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_done, 0, 0, 0)
                         textView.compoundDrawablePadding = 14.px
                         textView.textAlignment=View.TEXT_ALIGNMENT_TEXT_START
+                        
                     }
                     .show()
-//dfghjkjhgihiho
+
             }else{
 
                 (it as ImageButton).setColorFilter(ContextCompat.getColor(holder.itemView.context,
@@ -87,6 +88,9 @@ class CatalogAdapter (val apartments:List<House>):RecyclerView.Adapter<CatalogAd
                         textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_done, 0, 0, 0)
                         textView.compoundDrawablePadding = 14.px
                         textView.textAlignment=View.TEXT_ALIGNMENT_TEXT_START
+
+
+
                     }
                     .show()
             }
