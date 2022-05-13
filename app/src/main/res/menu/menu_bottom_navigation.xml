@@ -2,12 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home"
         android:title="Главная" />
     <item
         android:icon="@drawable/ic_news"
         android:title="Новости" />
     <item
+        android:id="@+id/navigation_selections"
         android:icon="@drawable/ic_dashboard"
         android:title="Подборки" />
     <item
