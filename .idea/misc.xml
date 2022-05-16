@@ -4,16 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/drawable/corner_radius_10dp.xml" value="0.2703125" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/drawable/corner_radius_10dp_gray.xml" value="0.18020833333333333" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/drawable/corner_radius_10dp_solid.xml" value="0.152" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/drawable/ellipse_btn.xml" value="0.4" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/drawable/ic_find_filter.xml" value="0.26927083333333335" />
-        <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/blank_fragment.xml" value="0.16944444444444445" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/catalog_item.xml" value="0.4" />
-        <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/navigation_home_fragment.xml" value="0.16944444444444445" />
-        <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/navigation_selections_fragment.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/filters_area_fragment.xml" value="0.2170138888888889" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/navigation_home_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/navigation_selections_fragment.xml" value="0.264" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/scpec_offer_item.xml" value="0.4" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/selections_fragment.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/selections_item.xml" value="0.383916990920882" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/selections_list_item.xml" value="0.536" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/layout/slider_test.xml" value="0.264" />
         <entry key="..\:/Users/1/AndroidStudioProjects/Lab2/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.16944444444444445" />
       </map>

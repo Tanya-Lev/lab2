@@ -52,6 +52,7 @@ val infoArr:ArrayList<String>
     }
 
 
+
 data class House(
     var city:String? = "Город",
     var price:String? = "от  1 123 123 руб.",

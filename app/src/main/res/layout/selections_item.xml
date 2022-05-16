@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#E7E7E7"
+        app:strokeWidth="1dp">
+
+        <TextView
+            android:id="@+id/selectionNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Для Танюшки" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="88dp"
+            android:background="@drawable/ellipse_btn"
+            android:backgroundTint="#EEEEEE"
+            android:padding="11dp"
+            app:srcCompat="@drawable/ic_pen" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="49dp"
+            android:background="@drawable/ellipse_btn"
+            android:backgroundTint="#EEEEEE"
+            android:padding="11dp"
+            app:srcCompat="@drawable/ic_chat_upload" />
+
+        <ImageView
+            android:id="@+id/deleteIV"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ellipse_btn"
+            android:backgroundTint="#EEEEEE"
+            android:padding="11dp"
+            app:srcCompat="@drawable/ic_delete_bin" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/selectionsListRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="15dp" />
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

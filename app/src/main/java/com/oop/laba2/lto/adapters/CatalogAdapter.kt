@@ -1,28 +1,19 @@
 package com.oop.laba2.lto.adapters
 
-import android.annotation.SuppressLint
-import android.graphics.Color
-import android.text.SpannableStringBuilder
-import android.text.style.ImageSpan
-import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.ViewGroup.MarginLayoutParams
 import android.widget.*
-import androidx.appcompat.content.res.AppCompatResources
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
-import androidx.core.view.marginBottom
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
-import com.oop.laba2.lto.MainActivity
 import com.oop.laba2.lto.R
 import com.oop.laba2.lto.Utils.px
 import com.oop.laba2.lto.enteties.House
 
 
-class CatalogAdapter (val apartments:List<House>):RecyclerView.Adapter<CatalogAdapter.CatalogViewHolder>(){
+class CatalogAdapter(val apartments: List<House>, val rootFragmentView: View?):RecyclerView.Adapter<CatalogAdapter.CatalogViewHolder>(){
     class CatalogViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         val dashboardBtn: ImageView = itemView.findViewById(R.id.dashboardBtn)
@@ -58,10 +49,10 @@ class CatalogAdapter (val apartments:List<House>):RecyclerView.Adapter<CatalogAd
         holder.priceTV.text = apartments[position].price
         holder.addressTV.text = apartments[position].address
         holder.infoTV.text = apartments[position].info
-        holder.heartBtn.setOnClickListener {
+        holder.heartBtn.setOnClickListener { it ->
             if(isFavoriteSelected){
                 (it as ImageButton).setColorFilter(ContextCompat.getColor(holder.itemView.context, R.color.favorite_unselected))
-                Snackbar.make(holder.itemView,"Объект убран из Избранного" , Snackbar.LENGTH_SHORT)
+                Snackbar.make(rootFragmentView!!,"Объект убран из Избранного" , Snackbar.LENGTH_SHORT)
                     .setBackgroundTint(holder.itemView.context.getColor(R.color.white))
                     .also {
                         it.setTextColor(holder.itemView.context.getColor(R.color.dark1))
@@ -70,8 +61,8 @@ class CatalogAdapter (val apartments:List<House>):RecyclerView.Adapter<CatalogAd
                         textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_done, 0, 0, 0)
                         textView.compoundDrawablePadding = 14.px
                         textView.textAlignment=View.TEXT_ALIGNMENT_TEXT_START
-                        
                     }
+                    
                     .show()
 
             }else{
@@ -79,7 +70,7 @@ class CatalogAdapter (val apartments:List<House>):RecyclerView.Adapter<CatalogAd
                 (it as ImageButton).setColorFilter(ContextCompat.getColor(holder.itemView.context,
                     R.color.favorite_selected
                 ))
-                Snackbar.make(holder.itemView,"Объект добавлен в Избранное" , Snackbar.LENGTH_SHORT)
+                Snackbar.make(rootFragmentView!!,"Объект добавлен в Избранное" , Snackbar.LENGTH_SHORT)
                     .setBackgroundTint(holder.itemView.context.getColor(R.color.white))
                     .also {
                         it.setTextColor(holder.itemView.context.getColor(R.color.dark1))
